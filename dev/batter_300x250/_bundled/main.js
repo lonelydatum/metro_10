@@ -29,6 +29,7 @@ exports.init = init;
 
 var _commonJsCommonJs = require('../../_common/js/common.js');
 
+TweenLite.defaultEase = Power3.easeOut;
 var tl = (0, _commonJsCommonJs.init)();
 tl.to(".holder", .3, { x: -300 }, "+=3.2");
 tl.to(".holder", .3, { x: -600 }, "+=2");

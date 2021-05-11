@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Created: May 11, 11:17</title>
+<title>Created: May 11, 12:48</title>
 <style>#banner{opacity: 0;}</style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="batter" content="width=300, height=250">
@@ -17,7 +17,7 @@
 <div class="outline"></div>
 <div class="frame frame1">
 <img src="bg.jpg">
-<div class="tint">
+<div class="tint"></div>
 <div class="holder">
 <img class="retina t1" src="t1.png">
 <img class="retina t2" src="t2.png">
@@ -30,11 +30,11 @@
 <img class="retina end_logo" src="end_logo.png">
 </div>
 </div>
-</div>
+<img class="retina border" src="border.png">
 </div>
 </div>
 </a>
 </body>
 <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_2.1.2_min.js"></script>
-<script>!function e(o,t,r){function n(f,u){if(!t[f]){if(!o[f]){var c="function"==typeof require&&require;if(!u&&c)return c(f,!0);if(i)return i(f,!0);var a=new Error("Cannot find module '"+f+"'");throw a.code="MODULE_NOT_FOUND",a}var d=t[f]={exports:{}};o[f][0].call(d.exports,function(e){var t=o[f][1][e];return n(t?t:e)},d,d.exports,e,o,t,r)}return t[f].exports}for(var i="function"==typeof require&&require,f=0;f<r.length;f++)n(r[f]);return n}({1:[function(e,o,t){"use strict";function r(){var e=new TimelineMax({onComplete:function(){}});return e.set(".frame1",{opacity:1}),e}Object.defineProperty(t,"__esModule",{value:!0});var n=document.getElementById("banner"),i={w:n.offsetWidth,h:n.offsetHeight};TweenLite.defaultEase=Power3.easeOut;i.w,i.h;t.size=i,t.init=r},{}],2:[function(e,o,t){"use strict";var r=e("../../_common/js/common.js"),n=r.init();n.to(".holder",.3,{x:-300},"+=3.2"),n.to(".holder",.3,{x:-600},"+=2"),n.to(".holder",.3,{x:-900},"+=2"),n.to(".holder",.3,{x:-1200},"+=2"),n.add("end","+=.5"),n.from(".end_txt",.3,{opacity:0},"end"),n.from(".end_copy",.3,{opacity:0},"+=.3"),n.from([".end_cta",".end_logo"],.3,{opacity:0},"+=.5"),o.exports={}},{"../../_common/js/common.js":1}]},{},[2]);</script>
+<script>!function e(t,o,r){function n(u,f){if(!o[u]){if(!t[u]){var a="function"==typeof require&&require;if(!f&&a)return a(u,!0);if(i)return i(u,!0);var c=new Error("Cannot find module '"+u+"'");throw c.code="MODULE_NOT_FOUND",c}var d=o[u]={exports:{}};t[u][0].call(d.exports,function(e){var o=t[u][1][e];return n(o?o:e)},d,d.exports,e,t,o,r)}return o[u].exports}for(var i="function"==typeof require&&require,u=0;u<r.length;u++)n(r[u]);return n}({1:[function(e,t,o){"use strict";function r(){var e=new TimelineMax({onComplete:function(){}});return e.set(".frame1",{opacity:1}),e}Object.defineProperty(o,"__esModule",{value:!0});var n=document.getElementById("banner"),i={w:n.offsetWidth,h:n.offsetHeight};TweenLite.defaultEase=Power3.easeOut;i.w,i.h;o.size=i,o.init=r},{}],2:[function(e,t,o){"use strict";var r=e("../../_common/js/common.js");TweenLite.defaultEase=Power3.easeOut;var n=r.init();n.to(".holder",.3,{x:-300},"+=3.2"),n.to(".holder",.3,{x:-600},"+=2"),n.to(".holder",.3,{x:-900},"+=2"),n.to(".holder",.3,{x:-1200},"+=2"),n.add("end","+=.5"),n.from(".end_txt",.3,{opacity:0},"end"),n.from(".end_copy",.3,{opacity:0},"+=.3"),n.from([".end_cta",".end_logo"],.3,{opacity:0},"+=.5"),t.exports={}},{"../../_common/js/common.js":1}]},{},[2]);</script>
 </html>

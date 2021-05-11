@@ -2,7 +2,7 @@
 
 
 import {init} from '../../_common/js/common.js'
-
+TweenLite.defaultEase = Power3.easeOut
 const tl = init()
 tl.to(".holder", .3, {x:-300}, "+=3.2")
 tl.to(".holder", .3, {x:-600}, "+=2")
