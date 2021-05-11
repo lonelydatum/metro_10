@@ -42,10 +42,10 @@ function start() {
 	TweenLite.set(".end", { x: -w * 4, width: w, height: h });
 	TweenLite.set(".holder", { x: 0 });
 	var tl = (0, _commonJs.init)();
-	tl.to(".holder", time, { x: w }, "+=3.2");
-	tl.to(".holder", time, { x: w * 2 }, "+=2");
-	tl.to(".holder", time, { x: w * 3 }, "+=2");
-	tl.add("last", "+=2");
+	tl.to(".holder", time, { x: w }, "+=3");
+	tl.to(".holder", time, { x: w * 2 }, "+=1.7");
+	tl.to(".holder", time, { x: w * 3 }, "+=1.7");
+	tl.add("last", "+=1.7");
 	tl.to(".holder", time, { x: w * 4 }, "last");
 	tl.to(".border-start", time, { x: "+=" + w }, "last");
 	tl.add("end", "+=.5");
