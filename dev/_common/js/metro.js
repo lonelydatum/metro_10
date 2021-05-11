@@ -18,13 +18,18 @@ function start(time=.4) {
 	tl.to(".holder", time, {x:w*4}, "last")
 	tl.to(".border-start", time, {x:`+=${w}`}, "last")
 	tl.add("end", "+=.5")
-	tl.from(".end_txt", time, {opacity:0}, "end")
+	// tl.from(".end_txt", time, {opacity:0}, "end")
 	// tl.from(, .3, {opacity:0}, "+=.3")
-	tl.from([".end_copy", ".end_cta", ".end_logo"], .5, {opacity:0}, "+=.4")
+	tl.from([".end_copy"], .5, {opacity:0}, "+=.4")
+	tl.from([".end_cta"], .3, {opacity:0}, "+=.3")
+	tl.from([".end_logo"], .3, {opacity:0}, "+=.3")
+	
+
+	// tl.gotoAndPlay("end")
 
 }
 
-// tl.gotoAndPlay("end")
+
 
 module.exports = {start};
 
