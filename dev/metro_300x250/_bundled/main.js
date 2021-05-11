@@ -30,6 +30,8 @@ exports.init = init;
 var _commonJs = require('./common.js');
 
 function start() {
+	var time = arguments.length <= 0 || arguments[0] === undefined ? .4 : arguments[0];
+
 	TweenLite.defaultEase = Power3.easeOut;
 	var w = _commonJs.size.w;
 	var h = _commonJs.size.h;
@@ -40,12 +42,12 @@ function start() {
 	TweenLite.set(".end", { x: -w * 4, width: w, height: h });
 	TweenLite.set(".holder", { x: 0 });
 	var tl = (0, _commonJs.init)();
-	tl.to(".holder", .3, { x: w }, "+=3.2");
-	tl.to(".holder", .3, { x: w * 2 }, "+=2");
-	tl.to(".holder", .3, { x: w * 3 }, "+=2");
-	tl.to(".holder", .3, { x: w * 4 }, "+=2");
+	tl.to(".holder", time, { x: w }, "+=3.2");
+	tl.to(".holder", time, { x: w * 2 }, "+=2");
+	tl.to(".holder", time, { x: w * 3 }, "+=2");
+	tl.to(".holder", time, { x: w * 4 }, "+=2");
 	tl.add("end", "+=.5");
-	tl.from(".end_txt", .4, { opacity: 0 }, "end");
+	tl.from(".end_txt", time, { opacity: 0 }, "end");
 	// tl.from(, .3, {opacity:0}, "+=.3")
 	tl.from([".end_copy", ".end_cta", ".end_logo"], .5, { opacity: 0 }, "+=.4");
 }
