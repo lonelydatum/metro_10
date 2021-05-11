@@ -2,6 +2,6 @@
 
 
 import {start} from '../../_common/js/metro.js'
-start()
+start(.6)
 module.exports = {};
 
