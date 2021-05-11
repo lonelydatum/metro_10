@@ -65,7 +65,7 @@ module.exports = { start: start };
 
 var _commonJsMetroJs = require('../../_common/js/metro.js');
 
-(0, _commonJsMetroJs.start)(.6);
+(0, _commonJsMetroJs.start)(.55);
 module.exports = {};
 
 },{"../../_common/js/metro.js":2}]},{},[3])
