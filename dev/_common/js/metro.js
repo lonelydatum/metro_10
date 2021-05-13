@@ -21,8 +21,8 @@ function start(time=.4) {
 	// tl.from(".end_txt", time, {opacity:0}, "end")
 	// tl.from(, .3, {opacity:0}, "+=.3")
 	tl.from([".end_copy"], .5, {opacity:0}, "+=.3")
-	tl.from([".end_cta"], .3, {opacity:0}, "+=.2")
-	tl.from([".end_logo"], .3, {opacity:0}, "+=.2")
+	tl.from([".end_logo", ".end_cta"], .3, {opacity:0}, "+=.2")
+	// tl.from([".end_logo"], .3, {opacity:0}, "+=.2")
 	
 
 	// tl.gotoAndPlay("end")
